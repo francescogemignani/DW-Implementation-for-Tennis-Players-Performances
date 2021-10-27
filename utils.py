@@ -1,5 +1,3 @@
-import csv
-
 def print4length(pathIn, col, threshold, delimiter=','):
     f = open(pathIn, mode="r")
     csvIn = csv.reader(f, delimiter=delimiter)
@@ -37,6 +35,5 @@ def isInteger(value):
     except ValueError:
         return False
 
-
-#filt4length("./tmp/player.csv",'sex',1)
-#printCSV("./tmp/match.csv")
+def isEmpty(l):
+    return not l
