@@ -1,6 +1,7 @@
 import pyodbc
 import csv
-from constant import *
+from constants import *
+from utils import *
 
 def makeSQLInsertionString(tabName,colsName):
     s = "INSERT INTO "+tabName+" ("
@@ -21,11 +22,64 @@ def makeSQLInsertionString(tabName,colsName):
         s+="?"
     return s+")"
 
+def getBlock(csvIn,block):
+    i, data = 0,[]
+    first = True
+    for row in csvIn:
+        if first:
+            first = False
+        else:
+            if i < block:
+                data.append(row)
+            else:
+                return data
+            i += 1
+    return data
 
+def tabPaging(csvIn, blockSize):
+    blocks = []
+    while True:
+        block = getBlock(csvIn,blockSize)
+        if isEmpty(block):
+            return blocks
+        else:
+            blocks.append(block)
 
-def getCSVlength(fileIn):
-    with open(fileIn,mode='r') as fileIn:
-        return sum( 1 for _ in fileIn)
+def insert_b_db(connection, pathIn, tabName, tabFeats, blockSize = 500):
+    fileIn = open(pathIn, mode='r')
+    csvIn = csv.reader(fileIn, delimiter=',')
+    cursor = connection.cursor()
+    sql = makeSQLInsertionString(tabName=tabName, colsName=tabFeats)
+
+    id = 0
+    for block in tabPaging(csvIn, blockSize):
+        print(id)
+        cursor.executemany(sql,block)
+        cursor.commit()
+        id+=1
+
+    connection.commit()
+    fileIn.close()
+    cursor.close()
+
+def insert_db(connection, pathIn, tabName, tabFeats, mod = 100):
+    count = 0
+    csv_length = getCSVlength(pathIn)
+    print("Pushing data in %s table: " % tabName)
+
+    fileIn = open(pathIn, mode='r')
+    csvIn = csv.DictReader(fileIn, delimiter=',')
+    sql = makeSQLInsertionString(tabName=tabName, colsName=tabFeats)
+    cursor = connection.cursor()
+    for row in csvIn:
+        if count % mod == 0:
+            print(">%d/%d.." % (count,csv_length) )
+        cursor.execute(sql, [row[attr] for attr in tabFeats])
+        count+=1
+        print(count)
+    fileIn.close()
+    connection.commit()
+    cursor.close()
 
 # Set the connection
 server = 'tcp:lds.di.unipi.it'
@@ -39,30 +93,9 @@ cnxn = pyodbc.connect(connectionString)
 print("Connected established!")
 print()
 
+insert_db(cnxn,"./tmp/date.csv","date",DATE_FEAT_TYPE.keys())
+insert_db(cnxn,"./tmp/tournament.csv","tournament",TOURN_FEAT_TYPE.keys())
+insert_db(cnxn,"./tmp/geography.csv","geography",GEO_FEAT_TYPE.keys())
+insert_db(cnxn,"./tmp/player.csv","player",PLAYER_FEAT_TYPE.keys(),mod=100)
+insert_b_db(cnxn, "./tmp/match.csv", "match", MATCH_FEAT_TYPE.keys(), blockSize=1000)
 
-
-def fillTable(connection, pathIn,tabName, tabFeats, mod = 100):
-    count = 0
-    csv_length = getCSVlength(pathIn)
-    print("Pushing data in %s table: " % tabName)
-
-    fileIn = open(pathIn, mode='r')
-    csvIn = csv.DictReader(fileIn, delimiter=',')
-    sql = makeSQLInsertionString(tabName=tabName, colsName=tabFeats)
-    cursor = cnxn.cursor()
-    for row in csvIn:
-        if count % mod == 0:
-            print(">%d/%d.." % (count,csv_length) )
-        cursor.execute(sql, [row[attr] for attr in tabFeats])
-        count+=1
-        print(count)
-    fileIn.close()
-    cnxn.commit()
-    cursor.close()
-
-
-#fillTable(cnxn,"./tmp/date.csv","date",DATE_TABLE_FEATS)
-#fillTable(cnxn,"./tmp/tournament.csv","tournament",TOURNAMENT_TABLE_FEATS)
-#fillTable(cnxn,"./tmp/geography.csv","geography",GEO_TABLE_FEATS)
-#fillTable(cnxn,"./tmp/player.csv","player",PLAYER_TABLE_FEATS,mod=100)
-fillTable(cnxn,"./tmp/match.csv","match",MATCH_TABLE_FEATS,mod=1000)

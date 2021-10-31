@@ -1,3 +1,23 @@
+import csv
+
+
+def isEmpty(elem):
+    return not elem
+
+def getCSVlength(fileIn):
+    with open(fileIn,mode='r') as fileIn:
+        return sum( 1 for _ in fileIn)
+
+def cast(value,type):
+    if type is float:
+        return float(value)
+    elif type is int:
+        return round(float(value))
+    elif type is str:
+        return str(value)
+    else:
+        raise TypeError(f"Attention! Unknown type {type}")
+
 def print4length(pathIn, col, threshold, delimiter=','):
     f = open(pathIn, mode="r")
     csvIn = csv.reader(f, delimiter=delimiter)
@@ -6,12 +26,12 @@ def print4length(pathIn, col, threshold, delimiter=','):
             print(row)
     f.close()
 
-def printCSV(pathIn, mode = 'r', delimiter=',', length=5):
+def printCSV(pathIn, mode='r', delimiter=',', length=5):
     f = open(pathIn, mode=mode)
     csvIn = csv.reader(f, delimiter=delimiter)
     c = 0
     for row in csvIn:
-        if c <length:
+        if c < length:
             print(row)
         else:
             break
@@ -35,5 +55,10 @@ def isInteger(value):
     except ValueError:
         return False
 
-def isEmpty(l):
-    return not l
+def makeDict(pathIn,key,value):
+    fileIn = open(pathIn, mode="r")
+    csvIn = csv.DictReader(fileIn, delimiter=",")
+    d = {}
+    for row in csvIn:
+        d[row[key]] = row[value]
+    return d

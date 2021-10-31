@@ -1,155 +1,155 @@
 country_ioc,continent,language
-JPN,Asia,Japan
-RUS,Europe,Russia
-FRA,Europe,France
-AUS,Oceania,Australia
-CAN,America,Canada
-BUL,Europe,Bulgaria
-GBR,Europe,Great Britain
-SRB,Europe,Serbia
-USA,America,United States of America
-ARG,America,Argentina
-SLO,Europe,Slovenia
-GER,Europe,Germany
-LAT,Europe,Latvia
-CZE,Europe,Czech Republic
-EST,Europe,Estonia
-ESP,Europe,Spain
-UKR,Europe,Ukraine
-ROU,Europe,Romania
-KAZ,Asia,Kazakhstan
-NED,Europe,Netherlands
-BEL,Europe,Belgium
-CRO,Europe,Croatia
-SVK,Europe,Slovakia
-BLR,Europe,Belarus
-CHI,America,Chile
-SUI,Europe,Switzerland
-POL,Europe,Poland
-LUX,Europe,Luxembourg
-ITA,Europe,Italy
-GEO,Europe,Georgia
-HUN,Europe,Hungary
-LTU,Europe,Lithuania
-BIH,Europe,Bosnia and Herzegovina
+JPN,Asia,Japanese
+RUS,Europe,Yakut
+FRA,Europe,Occitan
+AUS,Oceania,English
+CAN,America,Mohawk
+BUL,Europe,Bulgarian
+GBR,Europe,
+SRB,Europe,Serbian (Latin)
+USA,America,
+ARG,America,Spanish
+SLO,Europe,Slovenian
+GER,Europe,Upper sorbian
+LAT,Europe,Latvian
+CZE,Europe,Czech
+EST,Europe,Estonian
+ESP,Europe,Spanish
+UKR,Europe,Ukrainian
+ROU,Europe,Romanian
+KAZ,Asia,Kazakh
+NED,Europe,Frisian
+BEL,Europe,French
+CRO,Europe,Croatian
+SVK,Europe,Slovak
+BLR,Europe,Belarusian
+CHI,America,Spanish
+SUI,Europe,Romansh
+POL,Europe,Polish
+LUX,Europe,Luxembourgish
+ITA,Europe,Italian
+GEO,Europe,Georgian
+HUN,Europe,Hungarian
+LTU,Europe,Lithuanian
+BIH,Europe,Serbian (Latin)
 QAT,,
-TUR,Europe,Turkey
-AUT,Europe,Austria
-CYP,Europe,Cyprus
-RSA,Africa,South Africa
-TUN,Africa,Tunisia
-IND,Asia,India
-KOR,Asia,South Korea
-UZB,Asia,Uzbekistan
-MDA,Europe,Moldova
-BRA,America,Brazil
-POR,Europe,Portugal
-TPE,Asia,Taiwan
-ESA,America,El Salvador
-NZL,Oceania,New Zeland
-URU,America,Urugay
-GRE,Europe,Greece
-PUR,America,Puerto Rico
-CHN,Asia,China
-THA,Asia,Thailand
-SWE,Europe,Sweden
-DEN,Europe,Denmark
-COL,America,Colombia
-DOM,America,Dominican Republic
-NOR,Europe,Norway
-EGY,Africa,Egypt
-BAR,America,Barbados
-LIE,Europe,Liechtenstein
-PAR,America,Paraguay
-MNE,Europe,Montenegro
-BOL,America,Bolivia
-ECU,America,Ecuador
-MEX,America,Mexico
-IRL,Europe,Ireland
-ISR,Asia,Israel
-ALG,Africa,Algeria
-MON,Europe,Monaco
-FIN,Europe,Finland
-VEN,America,Venezuela
-LIB,Africa,Libya
-GUA,America,Guatemala
-PER,America,Peru
-INA,Asia,Indonesia
-PHI,Asia,Philippines
-HKG,Asia,Hong Kong
-MAR,Africa,Morocco
-ZIM,Africa,Zimbabwe
-PAK,Asia,Pakistan
-IRI,Asia,Iran
-SRI,Asia,Sri Lanka
-MKD,Europe,North Macedonia
-KGZ,Asia,Kyrgyzstan
-ARM,Asia,Armenia
-PNG,Oceania,Papua New Guinea
-SIN,Asia,Singapore
-BAH,America,Bahamas
+TUR,Europe,Turkish
+AUT,Europe,German
+CYP,Europe, 
+RSA,Africa,Setswana
+TUN,Africa,Arabic
+IND,Asia,Telugu
+KOR,Asia,Korean
+UZB,Asia,Uzbek (Latin)
+MDA,Europe, 
+BRA,America,Portuguese
+POR,Europe,Portuguese
+TPE,Asia,Chinese (Traditional) legacy
+ESA,America,Spanish
+NZL,Oceania,
+URU,America,
+GRE,Europe,Greek
+PUR,America,Spanish
+CHN,Asia,Yi
+THA,Asia,Thai
+SWE,Europe,Swedish
+DEN,Europe,Danish
+COL,America,Spanish
+DOM,America,Spanish
+NOR,Europe,Sami (Southern)
+EGY,Africa,Arabic
+BAR,America, 
+LIE,Europe,German
+PAR,America,Spanish
+MNE,Europe,Serbian (Latin)
+BOL,America,Spanish
+ECU,America,Spanish
+MEX,America,Spanish
+IRL,Europe,Irish
+ISR,Asia,Hebrew
+ALG,Africa,Tamazight (Latin)
+MON,Europe,French
+FIN,Europe,Swedish
+VEN,America,Spanish
+LIB,Africa,Arabic
+GUA,America,Spanish
+PER,America,Spanish
+INA,Asia,Indonesian
+PHI,Asia,English
+HKG,Asia,Chinese (Traditional) legacy
+MAR,Africa,Arabic
+ZIM,Africa,English
+PAK,Asia,Urdu
+IRI,Asia,Persian
+SRI,Asia,Sinhala
+MKD,Europe,
+KGZ,Asia,Kyrgyz
+ARM,Asia,Armenian
+PNG,Oceania, 
+SIN,Asia,English
+BAH,America, 
 TTO,,
-GRN,Europe,Grenada
-TRI,America,Trinidad and Tobago
-CUB,America,Cuba
-CRC,America,Costa Rica
-OMA,Africa,Oman
-MAS,Asia,Malaysia
-PAN,America,Panama
-CMR,Africa,Cameroon
-MLT,Europe,Malta
+GRN,Europe, 
+TRI,America,English
+CUB,America, 
+CRC,America,Spanish
+OMA,Africa,Arabic
+MAS,Asia,Malay
+PAN,America,Spanish
+CMR,Africa, 
+MLT,Europe,Maltese
 LBN,,
-BDI,Africa,Burundi
-NGR,Africa,Nigeria
-MRI,Africa,Mauritius
-GAB,Africa,Gabon
+BDI,Africa, 
+NGR,Africa,Yoruba
+MRI,Africa, 
+GAB,Africa, 
 AZE,,
 BRN,,
-SAM,Oceania,Samoa
+SAM,Oceania, 
 JAM,,
-KEN,Africa,Kenya
+KEN,Africa,Kiswahili
 GHA,,
-MGL,Asia,Mongolia
+MGL,Asia,Mongolian (Cyrillic)
 JOR,,
-GUD,America,Guadeloupe
-NAM,Africa,Namibia
-REU,Africa,Reunion
-MAD,Africa,Madagascar
+GUD,America, 
+NAM,Africa, 
+REU,Africa,
+MAD,Africa, 
 MRN,,
-VIE,Europe,Vietnam
-UNK,Europe,Kosovo
+VIE,Europe,Vietnamese
+UNK,Europe,
 SYR,,
-SGP,Asia,Singapore
+SGP,Asia,English
 UAE,,
 AHO,,
 BEN,,
-HAI,America,Haiti
+HAI,America, 
 ERI,,
 ITF,,
 COD,,
 LBA,,
-HON,America,Honduras
+HON,America,Spanish
 TKM,,
-TJK,Asia,Tajikistan
-POC,Unknown,Unknown
+TJK,Asia,Tajik (Cyrillic)
+POC,Unknown,
 BER,,
-AND,Europe,Andorra
+AND,Europe, 
 SMR,,
-PHL,Asia,Philippines
+PHL,Asia,English
 ANT,,
 TOG,,
-GUM,Oceania,Guam
+GUM,Oceania, 
 VIN,,
 BOT,,
-CAM,Asia,Cambodia
+CAM,Asia,Khmer
 ZAM,,
-KUW,Asia,Kuwait
-DEU,Europe,Germany
+KUW,Asia,Arabic
+DEU,Europe,Upper sorbian
 SAU,,
-NGA,Africa,Nigeria
+NGA,Africa,Yoruba
 BGR,,
-NLD,Europe,Netherlands
+NLD,Europe,Frisian
 LVA,,
-GRC,Europe,Greece
+GRC,Europe,Greek
 CRI,,
 BAN,,
