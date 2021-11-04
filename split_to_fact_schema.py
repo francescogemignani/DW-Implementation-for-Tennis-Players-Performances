@@ -231,8 +231,8 @@ def split2FactSchema(pathIn,pathOutList):
 
     closeFiles()
 
-############
-### MAIN ###
-############
-split2FactSchema(PATH_TENNIS, ALL_PATHS_TABS)
+
+
+
+
 
