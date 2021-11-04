@@ -54,6 +54,7 @@ L_PLAYER_TABLE_FEATS = {'player_id': 'loser_id', 'country_id': 'loser_ioc', 'nam
 ###########
 # SUPPORT #
 ###########
+CURR_YEAR = 2021
 WIN,LOS = 0,1
 CONTINENT, LANGUAGE = 0,1
 MATCH, TOURNAMENT, DATE, PLAYER, GEO = 0, 1, 2, 3, 4

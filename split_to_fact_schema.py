@@ -142,7 +142,7 @@ def makePlayerRow(rowIn, csvOut, keyValue, sexDict):
                 rowOut.append("")
         elif feat == 'year_of_birth':
             try:
-                currYear = int((rowIn['tourney_id'])[0:4])
+                currYear = CURR_YEAR
                 agePlayer = round(float(rowIn[wlPlayer['year_of_birth']]))
                 yearOfBirth = currYear - agePlayer
                 rowOut.append(cast(yearOfBirth,type))
