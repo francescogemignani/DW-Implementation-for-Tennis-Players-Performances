@@ -62,3 +62,10 @@ def makeDict(pathIn,key,value):
     for row in csvIn:
         d[row[key]] = row[value]
     return d
+
+def scopeStrLength(serie,threshold = 10):
+    unique_vals = list(serie.unique())
+    print("Show all element with length less or equal to %d:\n" % threshold)
+    for val in unique_vals:
+        if len(val) <= threshold:
+            print(val)

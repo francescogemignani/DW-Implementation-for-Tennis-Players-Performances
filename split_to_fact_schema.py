@@ -70,10 +70,12 @@ def makeMatchRow(rowIn, csvOut, keySet):
     rowOut = []
     for feat,type in MATCH_FEAT_TYPE.items():
         if feat == 'match_id':
-            rowOut.append(cast(keyValue,type))
+            #rowOut.append(cast(keyValue,type))
+            rowOut.append(keyValue)
         else:
             try:
-                rowOut.append(cast(rowIn[feat],type))
+                #rowOut.append(cast(rowIn[feat],type))
+                rowOut.append(rowIn[feat])
             except ValueError:
                 rowOut.append("")
     csvOut.writerow(rowOut)

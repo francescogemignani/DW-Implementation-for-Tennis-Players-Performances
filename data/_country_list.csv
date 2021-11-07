@@ -144,7 +144,7 @@ ID,country_name,country_code_name,country_code,lang_name,lang_code
 143,Nauru,nr,674, ,
 144,Nepal,np,977,Nepali,ne
 145,Netherlands,nl,31,Frisian,fy
-146,Curaí_ao,cw,599, ,
+146,CuraÌ_ao,cw,599, ,
 147,New Caledonia,nc,687, ,
 148,New Zealand,nz,64,Maori,mi
 149,Nicaragua,ni,505,Spanish,es
@@ -169,7 +169,7 @@ ID,country_name,country_code_name,country_code,lang_name,lang_code
 168,Portugal,pt,351,Portuguese,pt
 169,Puerto Rico,pr,1787,Spanish,es
 170,Qatar,qa,974,Arabic,ar
-171,Rí©union,re,262, ,
+171,RÌ©union,re,262, ,
 172,Romania,ro,40,Romanian,ro
 173,Russia,ru,7,Yakut,sah
 174,Rwanda,rw,250,Kinyarwanda,rw
@@ -181,7 +181,7 @@ ID,country_name,country_code_name,country_code,lang_name,lang_code
 180,Saint Vincent and the Grenadines,vc,1784, ,
 181,Samoa,ws,685, ,
 182,San Marino,sm,378, ,
-183,Sí£o Tomí© and Prí_ncipe,st,239, ,
+183,SÌ£o TomÌ© and PrÌ_ncipe,st,239, ,
 184,Saudi Arabia,sa,966,Arabic,ar
 185,Senegal,sn,221,Wolof,wo
 186,Serbia,rs,381,Serbian (Latin),sr
