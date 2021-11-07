@@ -62,7 +62,7 @@ def getUniqueKeys(keyList,keySet):
     return keys
 
 def makeMatchRow(rowIn, csvOut, keySet):
-    keyValue = str(rowIn['match_num']) + "-" + str(rowIn['tourney_id'])
+    keyValue = str(rowIn['match_num']) + "-" + str(rowIn['tourney_id']) + '-' + str(rowIn['tourney_level'])
     if keyValue in keySet:
         return
 
@@ -81,7 +81,7 @@ def makeMatchRow(rowIn, csvOut, keySet):
     csvOut.writerow(rowOut)
 
 def makeTournamentRow(rowIn, csvOut, keySet):
-    keyValue = rowIn['tourney_id']
+    keyValue = str(rowIn['tourney_id']) + '-' + str(rowIn['tourney_level'])
     if keyValue in keySet:
         return
 
