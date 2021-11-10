@@ -1,17 +1,19 @@
 ################
 ### PATHs IN ###
 ################
-DIR_IN = "//Mac/Home/Desktop/Laboratory-of-Data-Science/data/"
+DIR_IN = "raw_data/"
 PATH_TENNIS = DIR_IN+"tennis.csv"
 PATH_MALE_PLAYERS = DIR_IN+"male_players.csv"
 PATH_FEMALE_PLAYERS = DIR_IN+"female_players.csv"
 PATH_GEO = DIR_IN+"countries.csv"
-PATH_LANG = DIR_IN+"_country_list.csv"
+PATH_LANG = DIR_IN+"extra/country_list.csv"
+PATH_LANG_2 = DIR_IN+"extra/language_list.csv"
+PATH_CONTINENT = DIR_IN+"extra/continent_list.csv"
 
 #################
 ### PATHs OUT ###
 #################
-DIR_OUT = "//Mac/Home/Desktop/Laboratory-of-Data-Science/tmp/"
+DIR_OUT = "./tables/"
 PATH_TAB_MATCH = DIR_OUT+"match.csv"
 PATH_TAB_TOURNAMENT = DIR_OUT+"tournament.csv"
 PATH_TAB_DATE = DIR_OUT+"date.csv"
