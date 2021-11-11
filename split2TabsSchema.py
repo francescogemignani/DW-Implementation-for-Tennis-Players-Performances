@@ -110,15 +110,15 @@ def makeDateRow(rowIn, csvOut, keySet):
 
     keySet.add(keyValue)
     rowOut = []
-    for feat,type in DATE_FEAT_TYPE.items():
+    for feat,typ in DATE_FEAT_TYPE.items():
         if feat == 'date_id':
-            rowOut.append(cast(keyValue,type))
+            rowOut.append(cast(keyValue,typ))
         elif feat == 'day':
-            rowOut.append(cast(keyValue[6:8],type))
+            rowOut.append(cast(keyValue[6:8],typ))
         elif feat == 'month':
-            rowOut.append(cast(keyValue[4:6],type))
+            rowOut.append(cast(keyValue[4:6],typ))
         elif feat == 'year':
-            rowOut.append(cast(keyValue[0:4],type))
+            rowOut.append(cast(keyValue[0:4],typ))
         else:
             q = int(keyValue[4:6])/3
             rowOut.append(ceil(q))
