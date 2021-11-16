@@ -1,7 +1,7 @@
 ################
 ### PATHs IN ###
 ################
-DIR_IN = "raw_data/"
+DIR_IN = "raw/"
 PATH_TENNIS = DIR_IN+"tennis.csv"
 PATH_MALE_PLAYERS = DIR_IN+"male_players.csv"
 PATH_FEMALE_PLAYERS = DIR_IN+"female_players.csv"

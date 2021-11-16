@@ -82,7 +82,7 @@ def insert_b_db(connection, pathIn, tabName, tabFeats, blockSize = 500):
 def insert_db(connection, pathIn, tabName, tabFeats, mod = 100):
     count = 0
     csv_length = getCSVlength(pathIn)
-    print("Pushing raw_data in %s table: " % tabName)
+    print("Pushing raw in %s table: " % tabName)
 
     fileIn = open(pathIn, mode='r')
     csvIn = csv.DictReader(fileIn, delimiter=',')
@@ -111,9 +111,9 @@ cnxn = pyodbc.connect(connectionString)
 print("Connected established!")
 print()
 
-#insert_b_db(cnxn,PATH_TAB_DATE,"date",DATE_FEAT_TYPE.keys(),blockSize=50)
-#insert_b_db(cnxn,PATH_TAB_GEO,"geography",GEO_FEAT_TYPE.keys(),blockSize=50)
-#insert_b_db(cnxn,PATH_TAB_PLAYER,"player",PLAYER_FEAT_TYPE.keys(),blockSize=200)
-#insert_b_db(cnxn,PATH_TAB_TOURNAMENT,"tournament",TOURN_FEAT_TYPE.keys(),blockSize=50)
+insert_b_db(cnxn,PATH_TAB_DATE,"date",DATE_FEAT_TYPE.keys(),blockSize=50)
+insert_b_db(cnxn,PATH_TAB_GEO,"geography",GEO_FEAT_TYPE.keys(),blockSize=50)
+insert_b_db(cnxn,PATH_TAB_PLAYER,"player",PLAYER_FEAT_TYPE.keys(),blockSize=200)
+insert_b_db(cnxn,PATH_TAB_TOURNAMENT,"tournament",TOURN_FEAT_TYPE.keys(),blockSize=50)
 insert_b_db(cnxn, PATH_TAB_MATCH, "match", MATCH_FEAT_TYPE.keys(), blockSize=1000)
 

@@ -4,11 +4,11 @@ from constants import *
 
 pd.set_option('display.max_columns', None)
 
-match = pd.read_csv(PATH_TAB_MATCH)
-tourn = pd.read_csv(PATH_TAB_TOURNAMENT)
-date = pd.read_csv(PATH_TAB_DATE)
-player = pd.read_csv(PATH_TAB_PLAYER)
-geo = pd.read_csv(PATH_TAB_GEO)
+match = pd.read_csv(PATH_TAB_MATCH,encoding = "utf-8")
+tourn = pd.read_csv(PATH_TAB_TOURNAMENT,encoding = "utf-8")
+date = pd.read_csv(PATH_TAB_DATE,encoding = "utf-8")
+player = pd.read_csv(PATH_TAB_PLAYER,encoding = "utf-8")
+geo = pd.read_csv(PATH_TAB_GEO,encoding = "utf-8")
 
 
 ### DATE tab
@@ -46,6 +46,11 @@ colsToFill = match.columns[7:]
 for col in colsToFill:
     match.fillna(value={col:match[col].median()}, inplace=True)
 print("Match.csv file ready!")
+
+#Alcuni valori non unicode (1 char) in score
+match.loc[match['score'].str.len()<2, 'score'] = match['score'].mode()[0]
+match.loc[match['score']=='Def.', 'score'] = 'DEF'
+match.loc[match['score']=='&nbsp;','score'] = match['score'].mode()[0]
 
 ### Geography Tab
 # Abbiamo importato due ulteriori csv files per derivare i continenti e le lingue che hanno avevano un valore. Ulteriori
@@ -107,9 +112,9 @@ player = player.astype(PLAYER_FEAT_TYPE)
 geo = geo.astype(GEO_FEAT_TYPE)
 
 # Esporto i csv privi di missing values pronti per essere caricati
-match.to_csv(PATH_TAB_MATCH, index=False)
-tourn.to_csv(PATH_TAB_TOURNAMENT, index=False)
-date.to_csv(PATH_TAB_DATE, index=False)
-player.to_csv(PATH_TAB_PLAYER, index=False)
-geo.to_csv(PATH_TAB_GEO, index=False)
+match.to_csv(PATH_TAB_MATCH, index=False,encoding = "utf-8")
+tourn.to_csv(PATH_TAB_TOURNAMENT, index=False,encoding = "utf-8")
+date.to_csv(PATH_TAB_DATE, index=False,encoding = "utf-8")
+player.to_csv(PATH_TAB_PLAYER, index=False,encoding = "utf-8")
+geo.to_csv(PATH_TAB_GEO, index=False,encoding = "utf-8")
 print("All csv tables are been exported!")
