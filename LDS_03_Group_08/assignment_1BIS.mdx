@@ -1,0 +1,14 @@
+-- ASSIGNMENT 1 bis
+-- Show the total winners for each country and the ratio wrt the grand total to the continent.
+-- quanto incidono il numero di vincitori di un paese sul suo continente
+
+with member n_winners_continent as
+([Winner].[CountryContinent].currentmember.parent, [Measures].[N_Winners])
+
+member ratio as 
+[Measures].[N_Winners] / n_winners_continent,
+format_string = "percent"
+
+select {[Measures].[N_Winners], ratio} on columns,
+NONEMPTY(crossjoin([Winner].[Continent].[Continent],[Winner].[CountryContinent].[Country Ioc])) on rows
+from [Group 8 DB]

@@ -1,0 +1,9 @@
+-- ASSIGNMENT 2
+-- Show the ratio between the total winner rank points of each year w.r.t the previous year.
+
+with member ratio as
+[Measures].[Winner Rank Points] / ([Tournament].[DayMonthQuarterYear].currentmember.lag(1) , [Measures].[Winner Rank Points]),
+format_string = "percent"
+select {[Measures].[Winner Rank Points] , ratio} on columns,
+NONEMPTY([Tournament].[Year].[Year]) on rows
+from [Group 8 DB]

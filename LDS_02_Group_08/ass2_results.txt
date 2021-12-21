@@ -1,0 +1,7 @@
+year,tourney_name,num_matches
+2016,Sharm El Sheikh $10K,1265
+2017,Hammamet $15K,1113
+2018,Antalya $15K,1023
+2019,W15 Antalya,1057
+2020,W15 Monastir,693
+2021,W15 Antalya,1446

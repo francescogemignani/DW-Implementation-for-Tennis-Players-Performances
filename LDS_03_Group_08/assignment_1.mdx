@@ -1,0 +1,10 @@
+-- ASSIGNMENT 1
+-- Show the total winners for each country and the grand total with respect to the continent.
+
+
+with member n_winners_continent as
+([Winner].[CountryContinent].currentmember.parent, [Measures].[N_Winners])
+
+select {[Measures].[N_Winners], n_winners_continent} on columns,
+NONEMPTY(crossjoin([Winner].[Continent].[Continent],[Winner].[CountryContinent].[Country Ioc])) on rows
+from [Group 8 DB]

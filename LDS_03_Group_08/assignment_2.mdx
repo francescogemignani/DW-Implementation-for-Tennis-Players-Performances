@@ -1,0 +1,11 @@
+-- ASSIGNMENT 2
+-- Show the total winner rank points for each year and the running yearly winner rank points for European players.
+
+with member running_win_rank_points as
+aggregate( [Tournament].[DayMonthQuarterYear].[Year].&[2016] : [Tournament].[DayMonthQuarterYear].currentmember , 
+[Measures].[Winner Rank Points] )
+
+select {[Measures].[Winner Rank Points], running_win_rank_points} on columns,
+NONEMPTY([Tournament].[DayMonthQuarterYear].[Year]) on rows
+from [Group 8 DB]
+where [Winner].[Continent].&[Europe]
