@@ -4,7 +4,7 @@
 <img width = 400px src="https://datasagar.com/illionso_awesome/2015/03/datawarehouse1.png">  <img width=150px src="https://www.plan4res.eu/wp-content/uploads/2018/02/University-of-Pisa-Italy.png" />
 
 ### Description
-The project contains a data warehouse implementation to analyze tennis players' performances. Moreover, an ETL data flow process performed with SSIS is built to query the structure. Finally, we built an OLAP cube with SSAS and made business questions using MultiDimensional eXpressions (MDX) queries. Visualization made with PowerBI.\
+The project contains a data warehouse implementation to analyze tennis players' performances. Moreover, an ETL data flow process performed with SSIS is built to query the structure. Finally, we built an OLAP cube with SSAS and made business questions using MultiDimensional eXpressions (MDX) queries. Visualization made with PowerBI. \
 For more detailed information check the [report](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
 
 
