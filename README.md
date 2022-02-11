@@ -7,6 +7,11 @@
 The project contains a data warehouse implementation to analyze tennis players' performances. Moreover, an ETL data flow process performed with SSIS is built to query the structure. Finally, we built an OLAP cube with SSAS and made business questions using MultiDimensional eXpressions (MDX) queries. Visualization made with PowerBI. \
 For more detailed information check the [report](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
 
+### Assignments description
+- [Midterm 1 (October 2021): Data Warehouse deveopment](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
+- [Midterm 2 (November 2021): ETL dataflow processes - SSIS](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
+- [Midterm 3 (December 2021): OLAP datacube & PowerBI analysis - SSAS](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
+
 
 ### Course Objectives
 The course presents techniques for Business Analytics according to the data-driven
