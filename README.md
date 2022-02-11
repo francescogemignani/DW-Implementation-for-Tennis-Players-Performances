@@ -6,6 +6,8 @@
 The project contains a data warehouse implementation to analyze tennis players' performances. Moreover, an ETL data flow process performed with SSIS is built to query the structure. Finally, we built an OLAP cube with SSAS and made business questions using MultiDimensional eXpressions (MDX) queries. For more detailed information check the [report](other_file.md)
 
 
+
+
 ### Course Objectives
 The course presents techniques for Business Analytics according to the data-driven
 view of Data Science and Business Intelligence. It presents technologies and systems
