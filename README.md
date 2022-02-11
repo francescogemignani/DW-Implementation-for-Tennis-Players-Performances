@@ -1,5 +1,3 @@
-# A-Data-Warehouse-Implementation-for-Tennis-Players-Performances
-
 ### Project for Laboratory of Data Science course @ University of Pisa
 
 
