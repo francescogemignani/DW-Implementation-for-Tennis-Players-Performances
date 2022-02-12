@@ -8,9 +8,9 @@ The project contains a data warehouse implementation to analyze tennis players' 
 For more detailed information check the [report](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
 
 ### Assignments description
-- [Midterm 1 (October 2021): Data Warehouse deveopment](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
-- [Midterm 2 (November 2021): ETL dataflow processes - SSIS](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
-- [Midterm 3 (December 2021): OLAP datacube & PowerBI analysis - SSAS](https://github.com/francescogemignani/Laboratory-of-Data-Science/blob/main/LDS_files_Group_08/report.pdf)
+- [Midterm 1 (October 2021): Data Warehouse deveopment](https://github.com/francescogemignani/DW-Implementation-for-Tennis-Players-Performances/blob/main/LDS_01_Group_08/lds_project_2021_part_1.pdf)
+- [Midterm 2 (November 2021): ETL dataflow processes - SSIS](https://github.com/francescogemignani/DW-Implementation-for-Tennis-Players-Performances/blob/main/LDS_02_Group_08/lds_project_2021_part_2.pdf)
+- [Midterm 3 (December 2021): OLAP datacube & PowerBI analysis - SSAS](https://github.com/francescogemignani/DW-Implementation-for-Tennis-Players-Performances/blob/main/LDS_03_Group_08/lds_project_2021_part_3.pdf)
 
 
 ### Course Objectives
